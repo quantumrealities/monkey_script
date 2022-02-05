@@ -17,6 +17,14 @@ function monkey:setMonkey(username)
 		sound.SoundId = "rbxassetid://7080148387"
 		sound.Parent = character
 		
+		if not character:FindFirstChildOfClass("Shirt") then
+			Instance.new("Shirt", character)
+		end
+		
+		if not character:FindFirstChildOfClass("Pants") then
+			Instance.new("Pants", character)
+		end
+		
 		character:FindFirstChild("Shirt").ShirtTemplate = "http://www.roblox.com/asset/?id=7020665648"
 		character:FindFirstChild("Pants").PantsTemplate = "http://www.roblox.com/asset/?id=7021073832"
 		
