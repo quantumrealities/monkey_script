@@ -44,6 +44,8 @@ function monkey:setMonkey(username)
 		humanoid:AddAccessory(hat)
 		humanoid:AddAccessory(backpack)
 		
+		humanoid.JumpPower = 100
+		
 		if humanoid.RigType == Enum.HumanoidRigType.R6 then
 			tail.AttachmentPos = Vector3.new(0, 3.5, -1.5)
 			backpack.AttachmentPos = Vector3.new(0.191, 2.35, -1)
