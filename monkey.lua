@@ -14,6 +14,12 @@ function monkey:setMonkey(username)
 		local humanoid = character:FindFirstChild("Humanoid")
 		local sound = Instance.new("Sound")
 		
+		for _, accessory in pairs(character:GetChildren()) do
+			if accessory:IsA("Accessory") then
+				accessory:Destroy()	
+			end
+		end
+		
 		sound.SoundId = "rbxassetid://7080148387"
 		sound.Parent = character
 		
