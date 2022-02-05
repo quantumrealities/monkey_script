@@ -18,11 +18,13 @@ function monkey:setMonkey(username)
 		sound.Parent = character
 		
 		if not character:FindFirstChildOfClass("Shirt") then
-			Instance.new("Shirt", character)
+			local s = Instance.new("Shirt")
+			s.Parent = character
 		end
 		
 		if not character:FindFirstChildOfClass("Pants") then
-			Instance.new("Pants", character)
+			local p = Instance.new("Pants")
+			p.Parent = character
 		end
 		
 		character:FindFirstChildOfClass("Shirt").ShirtTemplate = "http://www.roblox.com/asset/?id=7020665648"
