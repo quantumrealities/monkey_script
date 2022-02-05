@@ -1,3 +1,7 @@
+--[[
+local module = require(loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/quantumrealities/monkey_script/main/monkey.lua"))()) --serversided
+]]
+
 local InsertService = game:GetService("InsertService")
 local monkey = {
 }
