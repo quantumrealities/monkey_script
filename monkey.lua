@@ -25,8 +25,8 @@ function monkey:setMonkey(username)
 			Instance.new("Pants", character)
 		end
 		
-		character:FindFirstChild("Shirt").ShirtTemplate = "http://www.roblox.com/asset/?id=7020665648"
-		character:FindFirstChild("Pants").PantsTemplate = "http://www.roblox.com/asset/?id=7021073832"
+		character:FindFirstChildOfClass("Shirt").ShirtTemplate = "http://www.roblox.com/asset/?id=7020665648"
+		character:FindFirstChildOfClass("Pants").PantsTemplate = "http://www.roblox.com/asset/?id=7021073832"
 		
 		local tail = InsertService:LoadAsset(5618077056):FindFirstChildOfClass("Accessory")
 		local hat = InsertService:LoadAsset(13700820):FindFirstChildOfClass("Accessory")
